@@ -1,0 +1,8 @@
+<div class="container">
+  <ng-container *ngFor="let element of data">
+    <app-day [data]="element"
+             [isOpened]="isOpened(element.day)"
+             (openDay)="open(element)">
+    </app-day>
+  </ng-container>
+</div>

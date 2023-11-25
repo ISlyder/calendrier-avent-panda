@@ -1,0 +1,24 @@
+.card {
+  background-position: center;
+  box-shadow: 3px 3px 20px 4px rgb(45, 45, 45, 0.4);
+  filter: grayscale(1);
+  position: relative;
+  height: 150px;
+  width: 120px;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 10px 4px rgba(227, 227, 227);
+  cursor: pointer;
+}
+
+.day-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+}
+
+.opened {
+  filter: grayscale(0);
+}

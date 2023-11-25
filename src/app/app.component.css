@@ -1,0 +1,55 @@
+:host {
+  position: relative;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  padding: 70px 20px 40px 20px;
+}
+
+.toolbar {
+  align-items: center;
+  background: linear-gradient(to right top, rgb(65, 176, 255), rgb(2, 18, 33));
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.toolbar img {
+  position: absolute;
+  left: 20px;
+  height: 45px;
+  width: 45px;
+}
+
+.toolbar h1 {
+  color: white;
+  font-size: 25px;
+}
+
+.toolbar h1:after {
+  content: ' \2764 ';
+}
+
+.panda-1 {
+  position: fixed;
+  bottom: 0;
+  height: 200px;
+  left: 25px;
+  width: 200px;
+
+  @media (max-width: 1125px) {
+    height: 150px;
+    left: 0;
+    width: 150px;
+  }
+
+  @media (max-width: 970px) {
+    height: 50px;
+    left: 0;
+    width: 50px;
+  }
+}
