@@ -1,9 +1,14 @@
 .card {
   box-shadow: 3px 3px 20px 4px rgb(45, 45, 45, 0.4);
-  position: relative;
+  color: white;
   height: 140px;
   width: 120px;
   border: 1px solid #e3e3e3;
+
+  @media (max-width: 630px) {
+    height: 100px;
+    width: 75px;
+  }
 }
 
 .card:hover {
