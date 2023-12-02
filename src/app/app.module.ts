@@ -6,6 +6,9 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { DayComponent } from './calendar/day/day.component';
 import { TooltipComponent } from './common/ui/tooltip/tooltip.component';
 import { TooltipDirective } from './common/ui/tooltip/tooltip.directive';
+import { SurpriseComponent } from './surprise/surprise.component';
+import { AppRoutingModule } from './app-routing.module';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -13,10 +16,13 @@ import { TooltipDirective } from './common/ui/tooltip/tooltip.directive';
     CalendarComponent,
     DayComponent,
     TooltipComponent,
-    TooltipDirective
+    TooltipDirective,
+    SurpriseComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

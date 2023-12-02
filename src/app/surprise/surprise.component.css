@@ -1,0 +1,22 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text {
+  font-size: 20px;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+img {
+  height: auto;
+  margin: 25px;
+  max-width: 450px;
+
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
+}

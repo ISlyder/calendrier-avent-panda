@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Calendar, DATA} from "./calendar-data";
+import {Router} from "@angular/router";
 
 export const OPENED_DAYS_KEY = 'openedDays';
 
@@ -13,22 +14,24 @@ export class CalendarComponent {
 
   openedDays: number[] = [];
 
-  constructor() {
+  constructor(private router: Router) {
     this.openedDays = JSON.parse(localStorage.getItem(OPENED_DAYS_KEY) || '[]');
   }
 
   open(data: Calendar): void {
     const currentDayOfMonth = new Date().getDate();
     if (data.day > currentDayOfMonth) {
-      console.log('Cannot open');
+      alert('You can\'t open this day yet...');
       return;
     }
-    if (data.action) data.action();
     if (!this.isOpened(data.day)) {
       this.openedDays.push(data.day);
     }
     localStorage.setItem(OPENED_DAYS_KEY, JSON.stringify(this.openedDays));
-    /* TODO: clear localStorage at last day */
+    this.router.navigate(["calendar/day/" + data.day]);
+    if (this.openedDays.length === this.data.length) {
+      localStorage.clear();
+    }
   }
 
   isOpened(day: number): boolean {

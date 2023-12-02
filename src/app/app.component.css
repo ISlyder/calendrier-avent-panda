@@ -3,6 +3,7 @@
 }
 
 .calendar-container {
+  align-items: center;
   display: flex;
   justify-content: center;
   padding: 98px 20px 40px 20px;
@@ -23,9 +24,12 @@
 }
 
 .toolbar img {
-  position: absolute;
+  &:hover {
+    cursor: pointer;
+  }
   left: 20px;
   height: 45px;
+  position: absolute;
   width: 45px;
 }
 
