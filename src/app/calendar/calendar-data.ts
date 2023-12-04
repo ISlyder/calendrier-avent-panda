@@ -17,18 +17,18 @@ export const DATA: Calendar[] = [
   },
   {
     day: 3,
-    text: 'Today is third day of December !',
-    img: '00'
+    text: 'A partir d\'aujourd\'hui, j\'arrête la chronologie et je te remémore des moments que j\'ai aimé. En espérant que tu les as apprécié aussi 😘',
+    img: 'assets/03.jpeg'
   },
   {
     day: 4,
-    text: 'Today is fourth day of December !',
-    img: ''
+    text: 'J\'espère que tu te souviens de toutes les photos que j\'ai pu mettre jusqu\'à là 😜Aujourd\'hui j\'ai simplement envi de te rappeler qu\'il ne reste que 19 jours avant que tu sois en France 🇫🇷🤞🏽J\'ai tellement hâte !!!!! Hâte de te retrouver, hâte de te prendre dans mes bras, hâte de t\'embrasser 😘',
+    img: 'assets/04.jpeg'
   },
   {
     day: 5,
-    text: 'Today is fifth day of December !',
-    img: ''
+    text: 'Tu me manques ❤️❤️Passe une bonne journée chérie 😘',
+    img: 'assets/05.JPEG'
   },
   {
     day: 6,
