@@ -32,37 +32,37 @@ export const DATA: Calendar[] = [
   },
   {
     day: 6,
-    text: 'Today is sixth day of December !',
-    img: ''
+    text: 'Hbibaaaaaa 🥰❤️',
+    img: 'assets/06.JPEG'
   },
   {
     day: 7,
-    text: 'Today is seventh day of December !',
+    text: '',
     img: ''
   },
   {
     day: 8,
-    text: 'Today is eighth day of December !',
+    text: '',
     img: ''
   },
   {
     day: 9,
-    text: 'Today is ninth day of December !',
+    text: '',
     img: ''
   },
   {
     day: 10,
-    text: 'Today is tenth day of December !',
+    text: '',
     img: ''
   },
   {
     day: 11,
-    text: 'Today is eleventh day of December !',
+    text: '',
     img: ''
   },
   {
     day: 12,
-    text: 'Today is twelfth day of December !',
+    text: '',
     img: ''
   },
   {
